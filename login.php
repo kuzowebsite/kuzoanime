@@ -1,5 +1,14 @@
 <?php
 session_start();
+if (isset($_SESSION['user_id'])) {
+    // Хэрэв хэрэглэгч аль хэдийн нэвтэрсэн бол index.php руу шилжүүлэх
+    header("Location: index.php");
+    exit;
+}
+?>
+
+<?php
+session_start();
 include 'db.php'; // Database холболт
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
