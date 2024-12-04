@@ -1,4 +1,5 @@
 <?php include 'db.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,6 +57,10 @@
     <div class="theme-toggle">
         <button id="toggleTheme">🌞 / 🌙</button>
     </div>
+
+    <footer>
+        <p>2024 © KuZo Аниме Вэбсайт</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
