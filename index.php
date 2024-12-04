@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    // Хэрэв хэрэглэгч нэвтрээгүй бол login.php руу шилжүүлэх
+    header("Location: login.php");
+    exit;
+}
+?>
+
+
 <?php include 'db.php'; ?>
 
 <!DOCTYPE html>
@@ -15,7 +25,6 @@
     <button class="menu-toggle" id="menuToggle">☰</button>
     <div class="logo">KuZo</div>
 </header>
-
 
     <!-- Зүүн талын sidebar -->
     <div class="sidebar" id="sidebar">
